@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+// Basic resets and Colors
+
+$primary-color: #fb7413;
+$secondary-color: #252d37;
+$bg-color: #121417;
+$text-color: #959eac;
+$circle-bg-color: #303b4b; 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $bg-color;
+  font-family: 'Overpass';
+}
+
+//Style Mixins
+@mixin circle {
+  background-color: $circle-bg-color;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Styling Main Container
+.container{
+  //display: none;
+  background-color: $secondary-color;
+  @include center;
+  padding: 1.2rem 1rem;
+  border-radius: 1rem;
+  width: 320px;
+
+  .star-logo{
+    position: relative;
+    margin-bottom: 2rem;
+    @include circle;
+
+    img{
+      @include center;
+    }
+  }
+
+  h1{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h5{
+    color: $text-color;
+    margin-bottom: 2rem;
+    line-height: 20px;
+    width: 289px;
+  }
+
+  .ratings{
+    display: flex;
+    justify-content: space-between;
+    color: $text-color;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+    .rate{
+      @include circle;
+      text-align: center;
+      padding-top: .7rem;
+      cursor: pointer;
+      transition: all .3s ease-in;
+
+      &:hover{
+        color: white;
+        background-color: $text-color;
+      }
+
+      &.selected{
+        color: #ffffff;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  button{
+    width: 286px;
+    font-size: .9rem;
+    padding: .6rem 0;
+    border-radius: 1rem;
+    border: none;
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+    &:hover{
+      color: $primary-color;
+      background-color: white;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+//Styling the Submission Page
+.rate-submitted{
+  display: none;
+  background-color: $secondary-color;
+  @include center;
+  padding: 1.2rem 2rem;
+  border-radius: 1rem;
+  width: 440px;
+
+  .thank-you-illus{
+    text-align: center
+  }
+
+  #score{
+    color:#fb7413;
+    text-align: center;
+    margin-top: 2rem !important;
+    background-color: #303b4b;
+    width: 200px;
+    margin: auto;
+    padding: .6rem 0;
+    border-radius: 16px;
+  }
+
+  h1{
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  h5{
+    color: $text-color;
+    margin-bottom: 2rem;
+    line-height: 20px;
+    //width: 289px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+
+  .ratings{
+    display: flex;
+    justify-content: space-between;
+    color: $text-color;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+    .rate{
+      @include circle;
+      text-align: center;
+      padding-top: .7rem;
+      cursor: pointer;
+      transition: all .3s ease-in;
+
+      &:hover{
+        color: white;
+        background-color: $text-color;
+      }
+
+      &.selected{
+        color: #ffffff;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  button{
+    width: 286px;
+    font-size: .9rem;
+    padding: .6rem 0;
+    border-radius: 1rem;
+    border: none;
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+    &:hover{
+      color: $primary-color;
+      background-color: white;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121417;
+  font-family: "Overpass";
+}
+
+.container {
+  background-color: #252d37;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.2rem 1rem;
+  border-radius: 1rem;
+  width: 320px;
+}
+.container .star-logo {
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: #303b4b;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.container .star-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container h1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.container h5 {
+  color: #959eac;
+  margin-bottom: 2rem;
+  line-height: 20px;
+  width: 289px;
+}
+.container .ratings {
+  display: flex;
+  justify-content: space-between;
+  color: #959eac;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.container .ratings .rate {
+  background-color: #303b4b;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.container .ratings .rate:hover {
+  color: white;
+  background-color: #959eac;
+}
+.container .ratings .rate.selected {
+  color: #ffffff;
+  background-color: #fb7413;
+}
+.container button {
+  width: 286px;
+  font-size: 0.9rem;
+  padding: 0.6rem 0;
+  border-radius: 1rem;
+  border: none;
+  background-color: #fb7413;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.container button:hover {
+  color: #fb7413;
+  background-color: white;
+}
+.container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.rate-submitted {
+  display: none;
+  background-color: #252d37;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.2rem 2rem;
+  border-radius: 1rem;
+  width: 440px;
+}
+.rate-submitted .thank-you-illus {
+  text-align: center;
+}
+.rate-submitted #score {
+  color: #fb7413;
+  text-align: center;
+  margin-top: 2rem !important;
+  background-color: #303b4b;
+  width: 200px;
+  margin: auto;
+  padding: 0.6rem 0;
+  border-radius: 16px;
+}
+.rate-submitted h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.rate-submitted h5 {
+  color: #959eac;
+  margin-bottom: 2rem;
+  line-height: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 24px;
+}
+.rate-submitted .ratings {
+  display: flex;
+  justify-content: space-between;
+  color: #959eac;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.rate-submitted .ratings .rate {
+  background-color: #303b4b;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.rate-submitted .ratings .rate:hover {
+  color: white;
+  background-color: #959eac;
+}
+.rate-submitted .ratings .rate.selected {
+  color: #ffffff;
+  background-color: #fb7413;
+}
+.rate-submitted button {
+  width: 286px;
+  font-size: 0.9rem;
+  padding: 0.6rem 0;
+  border-radius: 1rem;
+  border: none;
+  background-color: #fb7413;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.rate-submitted button:hover {
+  color: #fb7413;
+  background-color: white;
+}
+.rate-submitted button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}/*# sourceMappingURL=main.css.map */
