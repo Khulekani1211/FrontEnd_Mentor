@@ -175,4 +175,181 @@ body {
 .rate-submitted button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+@media screen and (max-width: 330px) {
+  .container {
+    width: 250px !important;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 12px;
+    width: 220px !important;
+  }
+  button {
+    width: 218px !important;
+  }
+}
+@media screen and (max-width: 250px) {
+  .container {
+    width: 200px !important;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+  h5 {
+    font-size: 11px;
+    width: 170px !important;
+  }
+  .ratings .rate {
+    width: 1.8rem !important;
+  }
+  .ratings .rate:hover {
+    color: white;
+    background-color: #959eac;
+  }
+  .ratings .rate.selected {
+    color: #ffffff;
+    background-color: #fb7413;
+  }
+  button {
+    width: 170px !important;
+  }
+}
+@media screen and (max-height: 375px) {
+  .container {
+    height: 300px !important;
+  }
+  .star-logo {
+    margin-top: -0.5rem;
+  }
+  h1 {
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
+  h5 {
+    font-size: 12px;
+    margin-top: -1rem;
+  }
+  .ratings {
+    margin-top: -1rem;
+  }
+  button {
+    margin-top: -1rem;
+  }
+}
+@media screen and (max-height: 300px) {
+  .container {
+    height: 250px !important;
+  }
+  h1 {
+    font-size: 0.5rem;
+  }
+  h5 {
+    font-size: 11px;
+    line-height: 14px !important;
+    margin-top: -1.2rem !important;
+  }
+  .ratings {
+    margin-top: -1.4rem;
+    margin-bottom: 1rem !important;
+  }
+  button {
+    margin-top: -3rem !important;
+    font-size: 0.6rem !important;
+    padding: 0.4rem 0 !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rate-submitted {
+    width: 250px;
+  }
+  .rate-submitted .thank-you-illus {
+    text-align: center;
+  }
+  .rate-submitted #score {
+    margin-left: -0.4rem !important;
+  }
+  .rate-submitted h1 {
+    font-size: 1.6rem !important;
+    margin: 1.4rem 0 !important;
+  }
+  .rate-submitted h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .rate-submitted h5 {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    width: 180px !important;
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 260px) {
+  .rate-submitted {
+    width: 200px;
+  }
+  .rate-submitted .thank-you-illus img {
+    width: 100px;
+  }
+  .rate-submitted #score {
+    font-size: 12px;
+    text-align: center;
+    width: 150px;
+  }
+  .rate-submitted h1 {
+    font-size: 1.2rem !important;
+    margin: 1rem 0 !important;
+  }
+  .rate-submitted h5 {
+    margin-bottom: 0.4rem;
+    font-size: 12px;
+    width: 140px !important;
+    line-height: 18px;
+  }
+}
+@media screen and (max-height: 435px) {
+  .rate-submitted .thank-you-illus img {
+    width: 120px;
+  }
+  .rate-submitted #score {
+    font-size: 14px;
+  }
+  .rate-submitted h1 {
+    font-size: 1.2rem !important;
+    margin: 1.2rem 0 !important;
+  }
+  .rate-submitted h5 {
+    margin-bottom: 0.2rem !important;
+    font-size: 14px;
+  }
+}
+@media screen and (max-height: 375px) {
+  .rate-submitted h5 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-height: 435px) {
+  .rate-submitted .thank-you-illus {
+    margin-bottom: 0;
+  }
+  .rate-submitted .thank-you-illus img {
+    width: 100px;
+  }
+  .rate-submitted #score {
+    margin-top: 4px !important;
+    font-size: 12px;
+  }
+  .rate-submitted h1 {
+    font-size: 1rem !important;
+    margin: 1.6rem 0 !important;
+  }
+  .rate-submitted h5 {
+    margin-bottom: 0.2rem !important;
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

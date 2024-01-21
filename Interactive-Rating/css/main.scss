@@ -208,3 +208,231 @@ body{
     }
   }
 }
+
+//Making the display Responsive to different screen sizes.
+
+//Ratings Page Responsiveness width
+@media screen and (max-width: 330px){
+  .container{
+    width: 250px !important;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 12px;
+    width: 220px !important;
+  }
+
+  button{
+    width: 218px !important;
+  }
+}
+
+@media screen and (max-width: 250px){
+  .container{
+    width: 200px !important;
+  }
+  h1{
+    font-size: .8rem;
+  }
+  h5{
+    font-size: 11px;
+    width: 170px !important;
+  }
+
+  .ratings{
+
+    .rate{
+      width: 1.8rem !important;
+
+      &:hover{
+        color: white;
+        background-color: $text-color;
+      }
+
+      &.selected{
+        color: #ffffff;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  button{
+    width: 170px !important;
+  }
+}
+//Ratings Page Responsiveness height
+@media screen and (max-height: 375px){
+  .container{
+    height: 300px !important;
+  }
+  .star-logo{
+    margin-top: -.5rem;
+  }
+  h1{
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
+
+  h5{
+    font-size: 12px;
+    margin-top: -1rem;
+  }
+
+  .ratings{
+    margin-top: -1rem;
+  }
+
+  button{
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-height: 300px){
+  .container{
+    height: 250px !important;
+  }
+  h1{
+    font-size: .5rem;
+  }
+  h5{
+    font-size: 11px;
+    line-height: 14px !important;
+    margin-top: -1.2rem !important;
+    
+  }
+
+  .ratings{
+    margin-top: -1.4rem;
+    margin-bottom: 1rem !important;
+  }
+
+  button{
+    margin-top: -3rem !important;
+    font-size: .6rem !important;
+    padding: .4rem 0 !important;
+  }
+}
+
+//Success Page Responsiveness width
+@media screen and (max-width: 450px){
+  .rate-submitted{
+    width: 250px;
+  
+    .thank-you-illus{
+      text-align: center
+    }
+  
+    #score{
+      margin-left: -.4rem !important;
+    }
+    h1{
+      font-size: 1.6rem !important;
+      margin: 1.4rem 0 !important;
+    }
+  
+    h5{
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 330px){
+  .rate-submitted{
+    h5{
+      margin-bottom: 1rem;
+      font-size: 14px;
+      width: 180px !important;
+      text-align: center !important;
+    }
+  }
+}
+@media screen and (max-width: 260px){
+  .rate-submitted{
+    width: 200px;
+  
+    .thank-you-illus{
+      img{
+        width: 100px;
+      }
+    }
+  
+    #score{
+      font-size: 12px;
+      text-align: center;
+      width: 150px;
+    }
+    h1{
+      font-size: 1.2rem !important;
+      margin: 1rem 0 !important;
+    }
+  
+    h5{
+      margin-bottom: .4rem;
+      font-size: 12px;
+      width: 140px !important;
+      line-height: 18px;
+    }
+  }
+}
+
+//Success Page Responsiveness height
+@media screen and (max-height: 435px){
+  .rate-submitted{
+    
+  
+    .thank-you-illus{
+      img{
+        width: 120px;
+      }
+    }
+  
+    #score{
+      font-size: 14px;
+    }
+    h1{
+      font-size: 1.2rem !important;
+      margin: 1.2rem 0 !important;
+    }
+  
+    h5{
+      margin-bottom: .2rem !important;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-height: 375px){
+  .rate-submitted{
+    h5{
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-height: 435px){
+  .rate-submitted{
+    
+  
+    .thank-you-illus{
+      margin-bottom: 0;
+      img{
+        width: 100px;
+      }
+      
+    }
+  
+    #score{
+      margin-top: 4px !important;
+      font-size: 12px;
+    }
+    h1{
+      font-size: 1rem !important;
+      margin: 1.6rem 0 !important;
+    }
+  
+    h5{
+      margin-bottom: .2rem !important;
+      font-size: 10px;
+    }
+  }
+}
