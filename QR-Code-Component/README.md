@@ -18,7 +18,7 @@ This is a FrontEnd Mentor challenge. The challenge is to build out a QR code com
 
 ### Screenshot
 
-![A preview of what the finished challenge looks like](./images/Screenshot.jpg)
+![A preview of what the finished challenge looks like](./images/Screenshot.png)
 
 ### Links
 
