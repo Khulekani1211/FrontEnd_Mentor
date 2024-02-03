@@ -18,7 +18,7 @@ This is a FrontEnd Mentor challenge. The challenge is to build out a QR code com
 
 ### Screenshot
 
-![./images/screenshot.jpg](./images/screenshot.jpg)
+![](/images/screenshot.jpg)
 
 ### Links
 
