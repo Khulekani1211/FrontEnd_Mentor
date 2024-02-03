@@ -23,7 +23,7 @@ This is a FrontEnd Mentor challenge. The challenge is to build out a QR code com
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Khulekani1211/FrontEnd_Mentor/tree/e55c960ee9d81f327fb66557d3baedc421480a96/QR-Code-Component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://qr-component-khulekani.netlify.app/](https://qr-component-khulekani.netlify.app/)
 
 ## My process
 I generally prefer to focus on mobile first design, that way it is easier to deal with media queries as the screen gets bigger. For this project however, the mobile screen is 375px and the component appears perfect even in the large scrren size of 1440px. 
