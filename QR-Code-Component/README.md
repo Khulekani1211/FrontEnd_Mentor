@@ -22,7 +22,7 @@ This is a FrontEnd Mentor challenge. The challenge is to build out a QR code com
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Khulekani1211/FrontEnd_Mentor/tree/e55c960ee9d81f327fb66557d3baedc421480a96/QR-Code-Component)
+- Solution URL: [https://github.com/Khulekani1211/FrontEnd_Mentor/tree/main/QR-Code-Component](https://github.com/Khulekani1211/FrontEnd_Mentor/tree/main/QR-Code-Component)
 - Live Site URL: [https://qr-component-khulekani.netlify.app/](https://qr-component-khulekani.netlify.app/)
 
 ## My process
