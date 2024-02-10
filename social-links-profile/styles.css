@@ -45,11 +45,16 @@ a{
   border-radius: 6px;
 }
 
+a:last-child{
+  margin-bottom: 0;
+}
+
+a:hover{
+  color: hsl(0, 0%, 12%);
+  background-color: hsl(0, 0%, 100%);
+}
+
 a:active{
   color: hsl(0, 0%, 12%);
   background-color: hsl(75, 94%, 57%);
-}
-
-a:last-child{
-  margin-bottom: 0;
 }
