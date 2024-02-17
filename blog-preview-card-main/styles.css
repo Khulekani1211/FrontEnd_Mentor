@@ -1,0 +1,38 @@
+/*Importing Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Inter:wght@400;600;700&family=Protest+Riot&display=swap');
+
+/*CSS Variable Declarations*/
+:root{
+  /*Primary Color(s)*/
+  --primary-color: hsl(47, 88%, 63%);
+
+  /*Neutral Colors*/
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+/*CSS Styles*/
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Figtree';
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.container{
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 16px;
+  box-shadow: 8px 8px;
+  max-width: 340px;
+}
+
+#illus{
+  text-align: center;
+  padding: 15px 10px;
+  width: 320px;
+  border-radius: 32px;
+}
