@@ -1,5 +1,9 @@
 /*Importing Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Inter:wght@400;600;700&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&family=Inter:wght@400;600;700&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Inter:wght@400;600;700&family=Protest+Riot&display=swap');
+
+
 
 /*CSS Variable Declarations*/
 :root{
@@ -23,6 +27,7 @@ body{
 }
 
 .container{
+  display: grid;
   background-color: var(--white);
   border: 1px solid var(--black);
   border-radius: 16px;
@@ -31,8 +36,54 @@ body{
 }
 
 #illus{
-  text-align: center;
-  padding: 15px 10px;
+  margin: 15px auto;
   width: 320px;
-  border-radius: 32px;
+  border-radius: 28px;
+}
+
+.content{
+  margin-left: 14px;
+}
+
+.tag{
+  background-color: var(--primary-color);
+  font-weight: 800;
+  width:fit-content;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#blog-date{
+  font-weight: 400;
+  color: var(--black);
+}
+
+.content p{
+  font-weight: 300;
+  color: var(--grey);
+  line-height: 22px;
+}
+
+.content h1{
+  font-size: 24px;
+}
+
+.blog-avatar{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+#avatar{
+  width: 50px;
+  height: 50px;
+}
+
+span{
+  display:inline-block;
+}
+
+h2{
+  font-size: 18px;
+  margin-left: 8px;
 }
