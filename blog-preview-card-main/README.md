@@ -25,7 +25,7 @@ The Challenge is to create a blog preview element identical to the screenshot be
 
 ### Screenshot
 
-![](/design/Screenshot.png)
+![](design/Screenshot.png)
 
 ### Links
 
