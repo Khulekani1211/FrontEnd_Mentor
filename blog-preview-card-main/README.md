@@ -45,51 +45,23 @@ My process focuses on mobile first design. So I began by working on the mobile d
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+My main take aways from this challenge has to do with centering a div correctly and how using CSS  variables for colors makes one's CSS look better and readable.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I plan on creating a personal blog site and this challenge has helped with an idea for how to have my blog posts previewed. A card preview instead of a simple title and description is more aesthetically appealing.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Perfect Pixel - chrome extension](https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) - This helped with getting the acurate dimensions of the blog-preview card in the design.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Khulekani](https://github.com/Khulekani1211)
+- Frontend Mentor - [@yKhulekani1211](https://www.frontendmentor.io/profile/Khulekani1211)
+- Twitter - [@KhulekaniGcaba](https://twitter.com/KhulekaniGcaba)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I will like to Tip My Hat to the following FrontEnd Mentor Users, who gave me useful tips on how to improve my previous challenge, to make my HTML more semantic and improve SEO.
+Thank you to @Ezekiel225, and @TorCanHack. And a special thanks to @danielmrz-dev, who brought "Perfect Pixel" chrome extension to my attention.
