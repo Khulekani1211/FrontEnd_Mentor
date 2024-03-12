@@ -18,3 +18,4 @@
 # Ignoring the design folder
 design
 .vscode
+style-guide.md
