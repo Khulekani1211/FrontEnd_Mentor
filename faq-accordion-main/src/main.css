@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf");
+@import url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+@import url("../assets/fonts/static/WorkSans-Bold.ttf");
+@import url("../assets/fonts/static/WorkSans-SemiBold.ttf");
+@import url("../assets/fonts/static/WorkSans-Regular.ttf");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11964,4 +11970,28 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.accordion-button::after { /* Target pseudo-element for arrows */
+  display: none; /* Hide default arrows */
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+}
+.accordion-button span {
+  flex-grow: 1;
+}
+
+.accordion-icon {
+  width: 20px !important;
+  height: 20px;
+  background-size: contain; /* Optional: Ensure image scales within container */
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,39 @@
 //Any customizations of primary variables go under this
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf");
+@import url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+@import url("../assets/fonts/static/WorkSans-Bold.ttf");
+@import url("../assets/fonts/static/WorkSans-SemiBold.ttf");
+@import url("../assets/fonts/static/WorkSans-Regular.ttf");
 
 //Including Accordion BootStrap Styling
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+body{
+  font-family: "Work Sans", sans-serif;
+}
+
+.accordion-button::after { /* Target pseudo-element for arrows */
+  display: none;  /* Hide default arrows */
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+
+  span{
+    flex-grow: 1;
+  }
+}
+
+.accordion-icon {
+  width: 20px !important;
+  height: 20px;
+  background-size: contain; /* Optional: Ensure image scales within container */
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
