@@ -13,6 +13,17 @@
 
 body{
   font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+main{
+  position: relative;
+  max-width: 320px;
+  margin: -100px auto 0;
+  padding: 40px 20px;
+  background-color: hsl(0%, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px 5px rgba($color: #000000, $alpha: 0.2);
 }
 
 .accordion-button::after { /* Target pseudo-element for arrows */
@@ -23,6 +34,15 @@ body{
   display: flex;
   align-items: center;
   position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 0px;
+  //padding-right: 40px;
+  color: hsl(292, 42%, 14%) ;
+
+  &:active{
+    color: hsl(292, 16%, 49%) !important;
+  }
   span{
     position: absolute;
     right: 0;
