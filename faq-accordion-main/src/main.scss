@@ -22,14 +22,16 @@ body{
 .accordion-button {
   display: flex;
   align-items: center;
-
+  position: relative;
   span{
-    flex-grow: 1;
+    position: absolute;
+    right: 0;
+    //margin-right: 20px;
   }
 }
 
 .accordion-icon {
-  width: 20px !important;
+  width: 20px;
   height: 20px;
   background-size: contain; /* Optional: Ensure image scales within container */
   background-repeat: no-repeat;
