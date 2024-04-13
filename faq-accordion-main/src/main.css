@@ -12012,4 +12012,8 @@ main {
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
+}
+
+button {
+  color: hsl(292, 42%, 14%) !important;
 }/*# sourceMappingURL=main.css.map */
