@@ -16,6 +16,16 @@ body{
   background-color: hsl(275, 100%, 97%);
 }
 
+.faq-header{
+  display: flex;
+  align-items: center;
+  
+  h1{
+    margin-left: 1.6rem;
+    font-weight: 800;
+  }
+}
+
 main{
   position: relative;
   max-width: 320px;
