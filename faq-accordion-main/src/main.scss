@@ -77,6 +77,10 @@ button{
   color: hsl(292, 42%, 14%) !important;
 }
 
+.accordion-body{
+  color: hsl(292, 16%, 49%);
+}
+
 // Media Queries for Responsiveness
 @media screen and (min-width: 376px) {
   #mobile-bg{
