@@ -11974,6 +11974,10 @@ body {
   background-color: hsl(275, 100%, 97%);
 }
 
+#desktop-bg {
+  display: none;
+}
+
 .faq-header {
   display: flex;
   align-items: center;
@@ -12025,4 +12029,27 @@ main {
 
 button {
   color: hsl(292, 42%, 14%) !important;
+}
+
+@media screen and (min-width: 376px) {
+  #mobile-bg {
+    display: none;
+  }
+  #desktop-bg {
+    display: block;
+  }
+  main {
+    max-width: 360px;
+    margin: -120px auto 0;
+  }
+}
+@media screen and (min-width: 450px) {
+  main {
+    max-width: 420px;
+  }
+}
+@media screen and (min-width: 600px) {
+  main {
+    max-width: 520px;
+  }
 }/*# sourceMappingURL=main.css.map */
