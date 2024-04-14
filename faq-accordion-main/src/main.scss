@@ -77,6 +77,14 @@ button{
   color: hsl(292, 42%, 14%) !important;
 }
 
+button:hover{
+  color: #AD28EB !important;
+}
+
+button:active{
+  color: #AD28EB !important;
+}
+
 .accordion-body{
   color: hsl(292, 16%, 49%);
 }
