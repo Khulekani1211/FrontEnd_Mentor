@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![A preview of what the finished challenge looks like](/assets/images/Screenshot_2.png)
+![A preview of what the finished challenge looks like](faq-accordion-main/assets/images/Screenshot_2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Khulekani1211/FrontEnd_Mentor/tree/56f7bd8d3370a721ca67578d4ac22c1469f552f6/faq-accordion-main/src)
+- Live Site URL: [Add live site URL here](https://faq-accordion-khulekani1.netlify.app/)
 
 ## My process
 
