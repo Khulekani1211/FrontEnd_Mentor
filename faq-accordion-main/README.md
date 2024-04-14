@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![A preview of what the finished challenge looks like](../assets/images/Screenshot.png)
+![A preview of what the finished challenge looks like](/assets/images/Screenshot_2.png)
 
 ### Links
 
