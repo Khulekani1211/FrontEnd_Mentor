@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  
+  <div class="logo">
+    <img src="images/logo.svg" alt="Logo for the Tip Calculator">
+  </div>
+
+  <main class="main">
+    <section class="bill-section">
+      <div class="bill-input">
+        <label for="bill-amount">Bill</label>
+        <span class="bill-icon">
+          <img src="images/icon-dollar.svg" alt="">
+        </span>
+        <input type="text" name="bill" placeholder="0" id="bill-amount">
+      </div>
+
+      <div class="select-tip">
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input type="text" name="custom" placeholder="Custom" id="custom-tip">
+      </div>
+
+      <div class="num-of-ppl">
+        <label for="ppl-input">Number of People</label>
+        <span class="person-icon">
+          <img src="images/icon-person.svg" alt="Person Icon Image">
+        </span>
+        <input type="text" name="People" placeholder="0" id="ppl-input">
+      </div>
+    </section>
+
+    <section class="tip-section">
+      <div class="tip-amount">
+        <span class="tip">Tip Amount<span class="per-person">/person</span></span>
+        <span class="tip-total">$4.27</span>
+      </div>
+
+      <div class="total-amount">
+        <span class="total">Total<span class="per-person">/person</span></span>
+        <span class="bill-total">$32.79</span>
+      </div>
+
+      <button class="reset-btn">RESET</button>
+    </section>
+  </main>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Khulekani</a>.
+  </div>-->
+</body>
+</html>
