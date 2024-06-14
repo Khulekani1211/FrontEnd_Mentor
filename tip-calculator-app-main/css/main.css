@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tip-wrapper {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.6rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-section {
+  color: hsl(186, 14%, 43%);
+}
+.bill-section .bill-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bill-section .bill-input label {
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+.bill-section .bill-input input {
+  flex: 1;
+  padding: 0.4em;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  outline: none;
+}
+.bill-section .bill-input .bill-icon {
+  position: absolute;
+  margin-left: 1em;
+  margin-top: 2.8em;
+}
+
+.select-tip p {
+  font-weight: 700;
+  margin-top: 2em;
+}/*# sourceMappingURL=main.css.map */
