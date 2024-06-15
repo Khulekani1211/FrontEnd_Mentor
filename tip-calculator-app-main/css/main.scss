@@ -40,11 +40,12 @@ main{
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  max-width: 375px;
 }
 
 .bill-section{
   color: $dark-grayish-cyan;
-
+  
   .bill-input{
     display: flex;
     flex-direction: column;
@@ -81,6 +82,49 @@ main{
   p{
     font-weight: 700;
     margin-top: 2em;
+  }
+
+  .tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  button{
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    width: 100%;
+    padding: 0.4em 0;
+    font-weight: 700;
+    border: none;
+    box-sizing: border-box;
+    color: $white;
+    background-color: $very-dark-cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+
+    &:hover, :active{
+      background-color: $primary-color;
+      color: $very-dark-cyan;
+    }
+  }
+  
+  input{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $very-light-grayish-cyan;
+    color: $very-dark-cyan;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-right: 10px;
+    font-family: 'Space Mono', monospace;
+    //font-size: px;
   }
 }
 
