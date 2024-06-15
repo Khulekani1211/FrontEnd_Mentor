@@ -160,3 +160,54 @@ main{
 
 }
 
+.tip-section{
+  background-color: $very-dark-cyan;
+  padding: 2em 1em;
+  color: $white;
+  font-weight: 700;
+  border-radius: 14px;
+
+  .per-person{
+    display: block;
+    font-size: 12px;
+    color: $grayish-cyan;
+    font-weight: 700;
+  }
+
+  .tip-amount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    .tip-total{
+      font-size: 32px;
+      color: $primary-color;
+    }
+  }
+
+  .total-amount{
+    display: flex;
+    justify-content: space-between;
+
+    .bill-total{
+      font-size: 32px;
+      color: $primary-color;
+    }
+  }
+
+  button{
+    width: 100%;
+    margin-top: 1.4em;
+    background-color: $primary-color;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: $very-dark-cyan;
+    padding: 6px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
