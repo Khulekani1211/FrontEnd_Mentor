@@ -28,7 +28,7 @@ main {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  max-width: 375px;
+  width: 375px;
 }
 
 .bill-section {
@@ -86,7 +86,7 @@ main {
   transition: background-color 0.5s ease-in-out;
 }
 .select-tip button:hover, .select-tip button :active {
-  background-color: hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
 .select-tip input {
@@ -138,6 +138,9 @@ main {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .tip-section .per-person {
   display: block;
@@ -175,4 +178,46 @@ main {
   padding: 6px 0;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.tip-section button:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+@media screen and (min-width: 460px) {
+  .tip-wrapper {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 560px) {
+  .tip-wrapper {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .tip-wrapper {
+    width: 760px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .tip-wrapper .bill-section {
+    max-width: 50%;
+  }
+  .tip-wrapper .tip-section {
+    width: 50%;
+  }
+  .tip-wrapper .tip-section .amounts {
+    margin-top: 1em;
+  }
+  .tip-wrapper .tips {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .tip-wrapper {
+    width: 840px;
+  }
 }/*# sourceMappingURL=main.css.map */

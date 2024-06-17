@@ -40,7 +40,7 @@ main{
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  max-width: 375px;
+  width: 375px;
 }
 
 .bill-section{
@@ -106,7 +106,7 @@ main{
     transition: background-color .5s ease-in-out;
 
     &:hover, :active{
-      background-color: $primary-color;
+      background-color: $light-grayish-cyan;
       color: $very-dark-cyan;
     }
   }
@@ -166,6 +166,9 @@ main{
   color: $white;
   font-weight: 700;
   border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .per-person{
     display: block;
@@ -208,6 +211,58 @@ main{
     padding: 6px 0;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color .5s ease-in-out;
+
+    &:hover{
+      background-color: $light-grayish-cyan;
+    }
   }
 }
 
+
+//Screen responsiveness with Media Queries
+@media screen and (min-width: 460px) {
+
+  .tip-wrapper{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .tip-wrapper{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .tip-wrapper{
+    width: 760px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+
+    .bill-section{
+      max-width: 50%;
+    }
+
+    .tip-section{
+      width: 50%;
+
+      .amounts{
+        margin-top: 1em;
+      }
+    }
+
+    .tips{
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tip-wrapper{
+    width: 840px;
+  }
+}
