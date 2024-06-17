@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: "Space Mono", monospace;
@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: auto;
 }
 
 .logo {
@@ -46,11 +47,16 @@ body {
   text-align: right;
   font-size: 24px;
   font-weight: 700;
+  font-family: "Space Mono", monospace;
   color: hsl(183, 100%, 15%);
   border-radius: 5px;
   border: none;
   background-color: hsl(189, 41%, 97%);
   outline: none;
+  cursor: pointer;
+}
+.bill-section .bill-input input:hover, .bill-section .bill-input input :active {
+  outline: 2px solid hsl(172, 67%, 45%);
 }
 .bill-section .bill-input .bill-icon {
   position: absolute;
@@ -99,6 +105,10 @@ body {
   border: none;
   padding-right: 10px;
   font-family: "Space Mono", monospace;
+  cursor: pointer;
+}
+.select-tip input:hover, .select-tip input :active {
+  outline: 2px solid hsl(172, 67%, 45%);
 }
 
 .num-of-ppl {
@@ -122,6 +132,7 @@ body {
   border: none;
   background-color: hsl(189, 41%, 97%);
   outline: none;
+  font-family: "Space Mono", monospace;
 }
 .num-of-ppl .person-icon {
   position: absolute;

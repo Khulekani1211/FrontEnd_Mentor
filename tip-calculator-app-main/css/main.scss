@@ -15,7 +15,7 @@ $white: hsl(0, 0%, 100%);
   box-sizing: border-box;
 }
 
-body{
+html, body{
   margin: 0;
   padding: 0;
   font-family: "Space Mono", monospace;
@@ -25,6 +25,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: auto;
 }
 
 .logo{
@@ -39,6 +40,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 375px;
+  
 }
 
 .bill-section{
@@ -60,11 +62,17 @@ body{
       text-align: right;
       font-size: 24px;
       font-weight: 700;
+      font-family: 'Space Mono', monospace;
       color: $very-dark-cyan;
       border-radius: 5px;
       border: none;
       background-color: $very-light-grayish-cyan;
       outline: none;
+      cursor: pointer;
+
+      &:hover, :active{
+        outline: 2px solid $primary-color;
+      }
     }
 
     .bill-icon{
@@ -123,6 +131,11 @@ body{
     padding-right: 10px;
     font-family: 'Space Mono', monospace;
     //font-size: px;
+    cursor: pointer;
+
+    &:hover, :active{
+      outline: 2px solid $primary-color;
+    }
   }
 }
 
@@ -148,6 +161,7 @@ body{
     border: none;
     background-color: $very-light-grayish-cyan;
     outline: none;
+    font-family: 'Space Mono', monospace;
   }
 
   .person-icon{
