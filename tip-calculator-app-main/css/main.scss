@@ -228,6 +228,12 @@ html, body{
     &:hover{
       background-color: $light-grayish-cyan;
     }
+
+    &:disabled {
+      background-color: $dark-grayish-cyan;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
   }
 }
 

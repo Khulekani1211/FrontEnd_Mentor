@@ -191,6 +191,11 @@ html, body {
 .tip-section button:hover {
   background-color: hsl(185, 41%, 84%);
 }
+.tip-section button:disabled {
+  background-color: hsl(186, 14%, 43%);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 @media screen and (min-width: 460px) {
   .tip-wrapper {
