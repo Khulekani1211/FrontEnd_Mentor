@@ -162,6 +162,10 @@ html, body{
     background-color: $very-light-grayish-cyan;
     outline: none;
     font-family: 'Space Mono', monospace;
+
+    &:hover, :active{
+      outline: 2px solid $primary-color;
+    }
   }
 
   .person-icon{

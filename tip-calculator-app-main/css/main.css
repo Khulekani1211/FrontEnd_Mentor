@@ -134,6 +134,9 @@ html, body {
   outline: none;
   font-family: "Space Mono", monospace;
 }
+.num-of-ppl input:hover, .num-of-ppl input :active {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
 .num-of-ppl .person-icon {
   position: absolute;
   margin-left: 1em;
