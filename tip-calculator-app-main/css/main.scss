@@ -112,7 +112,12 @@ html, body{
     transition: background-color .5s ease-in-out;
 
     &:hover, :active{
-      background-color: $light-grayish-cyan;
+      background-color: $primary-color;
+      color: $very-dark-cyan;
+    }
+
+    .clicked{
+      background-color: $primary-color;
       color: $very-dark-cyan;
     }
   }
