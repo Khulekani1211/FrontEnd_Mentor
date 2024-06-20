@@ -92,7 +92,7 @@ html, body {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
-.select-tip button .clicked {
+.select-tip button.clicked {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }

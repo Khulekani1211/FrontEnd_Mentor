@@ -116,7 +116,7 @@ html, body{
       color: $very-dark-cyan;
     }
 
-    .clicked{
+    &.clicked{
       background-color: $primary-color;
       color: $very-dark-cyan;
     }
