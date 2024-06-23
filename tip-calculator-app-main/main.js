@@ -43,3 +43,12 @@ customTip.addEventListener('change', (e) => {
   let tip = e.target.value;
   console.log(tip);
 })
+
+//Listening to the number of people input element
+const numOfPeople = document.getElementById('ppl-input');
+numOfPeople.value = '';
+
+numOfPeople.addEventListener('change', (e) => {
+  let people = e.target.value;
+  console.log(people);
+})
