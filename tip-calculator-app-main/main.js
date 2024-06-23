@@ -38,10 +38,12 @@ buttons.forEach(button => {
 //Listening to the custom tip percentage
 const customTip = document.getElementById('custom-tip');
 customTip.value = '';
+let realTip = 0;
 
 customTip.addEventListener('change', (e) => {
   let tip = e.target.value;
-  console.log(tip);
+  realTip = parseFloat(tip);
+  console.log(realTip, typeof realTip);
 })
 
 //Listening to the number of people input element
