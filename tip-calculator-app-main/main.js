@@ -11,7 +11,7 @@ billAmount.value = '';
 let realBill = 0;
 
 //Event Listener for the bill input
-billAmount.addEventListener('change', (e) => {
+billAmount.addEventListener('input', (e) => {
   const bill = e.target.value;
   resetButton.disabled = false;
   realBill = parseFloat(bill);
@@ -40,7 +40,7 @@ const customTip = document.getElementById('custom-tip');
 customTip.value = '';
 let realTip = 0;
 
-customTip.addEventListener('change', (e) => {
+customTip.addEventListener('input', (e) => {
   let tip = e.target.value;
   realTip = parseFloat(tip);
   resetButton.disabled = false;
@@ -52,7 +52,7 @@ const numOfPeople = document.getElementById('ppl-input');
 numOfPeople.value = '';
 let realPeople = 0;
 
-numOfPeople.addEventListener('change', (e) => {
+numOfPeople.addEventListener('input', (e) => {
   let people = e.target.value;
   realPeople = parseInt(people);
   resetButton.disabled = false;
