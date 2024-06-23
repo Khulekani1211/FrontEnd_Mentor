@@ -1,8 +1,6 @@
 //On load settings
-
+const resetButton = document.getElementById('reset-button');
 document.addEventListener("DOMContentLoaded", function (){
-  const resetButton = document.getElementById('reset-button');
-
   //Disable the reset button
   resetButton.disabled = true;
 })
@@ -15,6 +13,7 @@ let realBill = 0;
 //Event Listener for the bill input
 billAmount.addEventListener('change', (e) => {
   const bill = e.target.value;
+  resetButton.disabled = false;
   realBill = parseFloat(bill);
   console.log(bill, typeof bill);
   console.log(realBill, typeof realBill);
@@ -31,6 +30,7 @@ buttons.forEach(button => {
     button.classList.add('clicked');
 
     const percentage = button.getAttribute('data-percent');
+    resetButton.disabled = false;
     console.log(percentage, typeof percentage);
   })
 })
@@ -43,6 +43,7 @@ let realTip = 0;
 customTip.addEventListener('change', (e) => {
   let tip = e.target.value;
   realTip = parseFloat(tip);
+  resetButton.disabled = false;
   console.log(realTip, typeof realTip);
 })
 
@@ -54,5 +55,6 @@ let realPeople = 0;
 numOfPeople.addEventListener('change', (e) => {
   let people = e.target.value;
   realPeople = parseInt(people);
+  resetButton.disabled = false;
   console.log(realPeople, typeof realPeople);
 })
