@@ -15,8 +15,8 @@ billAmount.addEventListener('input', (e) => {
   const bill = e.target.value;
   //resetButton.disabled = false;
   realBill = parseFloat(bill);
-  console.log(bill, typeof bill);
-  console.log(realBill, typeof realBill);
+  //console.log(bill, typeof bill);
+  //console.log(realBill, typeof realBill);
 })
 
 //Making the clicked button active
@@ -31,7 +31,7 @@ buttons.forEach(button => {
 
     const percentage = button.getAttribute('data-percent');
     //resetButton.disabled = false;
-    console.log(percentage, typeof percentage);
+    //console.log(percentage, typeof percentage);
   })
 })
 
@@ -44,7 +44,7 @@ customTip.addEventListener('input', (e) => {
   let tip = e.target.value;
   realTip = parseFloat(tip);
   //resetButton.disabled = false;
-  console.log(realTip, typeof realTip);
+  //console.log(realTip, typeof realTip);
 })
 
 //Listening to the number of people input element
@@ -56,10 +56,14 @@ numOfPeople.addEventListener('input', (e) => {
   let people = e.target.value;
   realPeople = parseInt(people);
   //resetButton.disabled = false;
-  console.log(realPeople, typeof realPeople);
+  //console.log(realPeople, typeof realPeople);
 })
 
-//Disabling the Reset button when the input elements are empty
-if(billAmount.value == '' && numOfPeople.value == ''){
-  resetButton.disabled = true;
+//Calculating the tip per person and the total amount per person
+const tipAmount = (bill, tip, numOfPpl) => {
+  return (bill*tip/100)/numOfPpl;
+}
+
+const totalBill = (bill, tip, numOfPpl) => {
+  return (bill + (bill*tip/100))/numOfPpl;
 }
