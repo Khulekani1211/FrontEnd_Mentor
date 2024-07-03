@@ -13,10 +13,8 @@ let realBill = 0;
 //Event Listener for the bill input
 billAmount.addEventListener('input', (e) => {
   const bill = e.target.value;
-  //resetButton.disabled = false;
   realBill = parseFloat(bill);
-  //console.log(bill, typeof bill);
-  //console.log(realBill, typeof realBill);
+  update();
 })
 
 //Making the clicked button active
@@ -30,8 +28,7 @@ buttons.forEach(button => {
     button.classList.add('clicked');
 
     const percentage = button.getAttribute('data-percent');
-    //resetButton.disabled = false;
-    //console.log(percentage, typeof percentage);
+    update();
   })
 })
 
@@ -43,8 +40,7 @@ let realTip = 0;
 customTip.addEventListener('input', (e) => {
   let tip = e.target.value;
   realTip = parseFloat(tip);
-  //resetButton.disabled = false;
-  //console.log(realTip, typeof realTip);
+  update();
 })
 
 //Listening to the number of people input element
@@ -55,8 +51,7 @@ let realPeople = 0;
 numOfPeople.addEventListener('input', (e) => {
   let people = e.target.value;
   realPeople = parseInt(people);
-  //resetButton.disabled = false;
-  //console.log(realPeople, typeof realPeople);
+  update();
 })
 
 //Calculating the tip per person and the total amount per person
@@ -66,4 +61,20 @@ const tipAmount = (bill, tip, numOfPpl) => {
 
 const totalBill = (bill, tip, numOfPpl) => {
   return (bill + (bill*tip/100))/numOfPpl;
+}
+
+//Updating the results as the input changes.
+const update = () => {
+  if(realBill > 0 && realTip > 0 && realPeople > 0){
+    const tipPerPerson = tipAmount(realBill, realTip, realPeople);
+    const totalPerPerson = totalBill(realBill, realTip, realPeople);
+
+    document.getElementById("tipTotal").textContent = tipPerPerson.toFixed(2);
+    document.getElementById("billTotal").textContent = totalPerPerson.toFixed(2);
+    resetButton.disabled = false; 
+  }else{
+    document.getElementById("tipTotal").textContent = '0.00';
+    document.getElementById("billTotal").textContent = '0.00';
+    resetButton.disabled = true;
+  }
 }
