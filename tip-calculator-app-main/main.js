@@ -19,7 +19,8 @@ billAmount.addEventListener('input', (e) => {
 
 //Making the clicked button active
 const buttons = document.querySelectorAll('.tips button');
-const customVal = document.getElementById('custom-tip');
+//const customVal = document.getElementById('custom-tip');
+let realTip = 0;
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -27,7 +28,8 @@ buttons.forEach(button => {
     
     button.classList.add('clicked');
 
-    const percentage = button.getAttribute('data-percent');
+    realTip = parseFloat(button.getAttribute('data-percent'));
+    customTip.value = '';
     update();
   })
 })
@@ -35,7 +37,6 @@ buttons.forEach(button => {
 //Listening to the custom tip percentage
 const customTip = document.getElementById('custom-tip');
 customTip.value = '';
-let realTip = 0;
 
 customTip.addEventListener('input', (e) => {
   let tip = e.target.value;
