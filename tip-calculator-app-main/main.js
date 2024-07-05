@@ -79,3 +79,13 @@ const update = () => {
     resetButton.disabled = true;
   }
 }
+
+resetButton.addEventListener('click', () => {
+  billAmount.value = '';
+  buttons.forEach(btn => btn.classList.remove('clicked'));
+  customTip.value = '';
+  numOfPeople.value = '';
+  document.getElementById("tipTotal").textContent = '0.00';
+  document.getElementById("billTotal").textContent = '0.00';
+  resetButton.disabled = true;
+})
