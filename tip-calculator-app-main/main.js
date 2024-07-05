@@ -50,8 +50,16 @@ numOfPeople.value = '';
 let realPeople = 0;
 
 numOfPeople.addEventListener('input', (e) => {
-  let people = e.target.value;
-  realPeople = parseInt(people);
+  let people = parseInt(e.target.value);
+  realPeople = people > 0 ? people : 0;
+  console.log(people > 0)
+  if(realPeople > 0 || e.target.value == ''){
+    numOfPeople.classList.remove('validate')
+  }else{
+    numOfPeople.classList.add('validate')
+  }
+  
+
   update();
 })
 
@@ -89,3 +97,4 @@ resetButton.addEventListener('click', () => {
   document.getElementById("billTotal").textContent = '0.00';
   resetButton.disabled = true;
 })
+
