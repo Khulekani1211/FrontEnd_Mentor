@@ -113,6 +113,9 @@ html, body {
 .select-tip input:hover, .select-tip input :active {
   outline: 2px solid hsl(172, 67%, 45%);
 }
+.select-tip input.validate {
+  outline: 2px solid red;
+}
 
 .num-of-ppl {
   margin: 1.6em 0;
@@ -139,6 +142,9 @@ html, body {
 }
 .num-of-ppl input:hover, .num-of-ppl input :active {
   outline: 2px solid hsl(172, 67%, 45%);
+}
+.num-of-ppl input.validate {
+  outline: 2px solid red;
 }
 .num-of-ppl .person-icon {
   position: absolute;
