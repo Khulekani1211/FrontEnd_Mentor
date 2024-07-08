@@ -134,6 +134,12 @@ html, body {
   color: red;
   display: none;
 }
+.num-of-ppl .invalid-ppl {
+  position: absolute;
+  right: 0;
+  color: red;
+  display: none;
+}
 .num-of-ppl input {
   flex: 1;
   padding: 0.4em;

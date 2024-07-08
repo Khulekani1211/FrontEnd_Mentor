@@ -165,6 +165,13 @@ html, body{
     color: red;
     display: none;
   }
+
+  .invalid-ppl{
+    position: absolute;
+    right: 0;
+    color: red;
+    display: none;
+  }
   input{
     flex: 1;
     padding: 0.4em;
