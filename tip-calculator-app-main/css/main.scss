@@ -149,6 +149,7 @@ html, body{
 }
 
 .num-of-ppl{
+  position: relative;
   margin: 1.6em 0;
   display: flex;
   flex-direction: column;
@@ -158,7 +159,12 @@ html, body{
     font-weight: 700;
     margin-bottom: .4em;
   }
-
+  .zero-ppl{
+    position: absolute;
+    right: 0;
+    color: red;
+    display: none;
+  }
   input{
     flex: 1;
     padding: 0.4em;
