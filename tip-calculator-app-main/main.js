@@ -48,6 +48,7 @@ customTip.addEventListener('input', (e) => {
 const numOfPeople = document.getElementById('ppl-input');
 numOfPeople.value = '';
 let realPeople = 0;
+const zeroInput = document.querySelector('.zero-ppl'); // Is the span for zero input validation
 
 numOfPeople.addEventListener('input', (e) => {
   let people = parseInt(e.target.value);
@@ -55,8 +56,10 @@ numOfPeople.addEventListener('input', (e) => {
   console.log(people > 0)
   if(realPeople > 0 || e.target.value == ''){
     numOfPeople.classList.remove('validate')
+    zeroInput.style.display = 'none';
   }else{
     numOfPeople.classList.add('validate')
+    zeroInput.style.display = 'block';
   }
   
 
