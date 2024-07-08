@@ -49,17 +49,28 @@ const numOfPeople = document.getElementById('ppl-input');
 numOfPeople.value = '';
 let realPeople = 0;
 const zeroInput = document.querySelector('.zero-ppl'); // Is the span for zero input validation
+const invalidInput = document.querySelector('.invalid-ppl'); // Is the span for non-zero input validation
 
 numOfPeople.addEventListener('input', (e) => {
   let people = parseInt(e.target.value);
   realPeople = people > 0 ? people : 0;
-  console.log(people > 0)
+  const pattern = /^[a-zA-Z1-9!@#$%^&*()_+{}\[\]:;"'<>,.?\/\\|`~\-=\s]+$/;
+  //console.log(people > 0)
   if(realPeople > 0 || e.target.value == ''){
     numOfPeople.classList.remove('validate')
+    invalidInput.style.display = 'none';
     zeroInput.style.display = 'none';
-  }else{
+  }
+  else if(pattern.test(e.target.value)){
+    numOfPeople.classList.add('validate')
+    invalidInput.style.display = 'block';
+    //console.log('correct')
+  }
+  else{
     numOfPeople.classList.add('validate')
     zeroInput.style.display = 'block';
+    invalidInput.style.display = 'none';
+    //console.log('not correct')
   }
   
 
