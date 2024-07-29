@@ -77,6 +77,6 @@ I really struggled with responsiveness on changing screen height. I want to cont
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Khulekani1211)
-- Twitter - [@yourusername](https://www.twitter.com/@KhulekaniGcaba)
+- Frontend Mentor - [@Khulekani1211](https://www.frontendmentor.io/profile/Khulekani1211)
+- Twitter - [@KhulekaniGcaba](https://www.twitter.com/@KhulekaniGcaba)
 
