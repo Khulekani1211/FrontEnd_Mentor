@@ -41,6 +41,10 @@ customTip.value = '';
 customTip.addEventListener('input', (e) => {
   let tip = e.target.value;
   realTip = parseFloat(tip);
+  //Remove the active button class when entering the custom tip
+  buttons.forEach(button => {
+    button.classList.remove('clicked')
+  })
   update();
 })
 
