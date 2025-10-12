@@ -41,9 +41,225 @@ body {
   color: $slate-900;
   background-color: $slate-100;
   line-height: 1.5;
+  height: 100vh;
+  width: 100vw;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+// ==============================
+// Layout styles
+// ==============================
+.container {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+  .calculator {
+    background-color: $white;
+    padding: 30px;
+    width: 100%;
+
+    .cal-head {
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: $font-weight-bold;
+        color: $slate-900;
+      }
+      a{
+        text-decoration: none;
+        font-size: 0.95rem;
+        color: $slate-900;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid $slate-900;
+        width: fit-content;
+        margin-top: 10px;
+      }
+
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        // .input-group {
+        //   display: flex;
+        //   flex-direction: column;
+        //   gap: 5px;
+
+        //     label {
+        //         font-size: 0.95rem;
+        //         color: $slate-900;
+        //     }
+
+        //     input {
+        //         padding: 10px;
+        //         border: 1px solid $slate-300;
+        //         border-radius: 5px;
+        //         font-size: 1rem;
+        //         color: $slate-900;
+
+        //         &:focus {
+        //             outline: none;
+        //             border-color: $lime;
+        //             box-shadow: 0 0 5px rgba(161, 198, 61, 0.5);
+        //         }
+                
+        //     }
+
+        // }
+
+        .input-group {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          position: relative;
+
+          label {
+            font-size: 0.95rem;
+            color: $slate-900;
+          }
+
+          /* wrapper for input + span */
+          input {
+            width: 100%;
+            max-width: 350px;
+            padding: 12px 50px 12px 14px; // space for icons/text
+            border: 1px solid $slate-300;
+            border-radius: 6px;
+            font-size: 1rem;
+            color: $slate-900;
+            background-color: $white;
+            transition: border-color 0.3s, box-shadow 0.3s;
+
+            &:focus {
+              outline: none;
+              border-color: $lime;
+              box-shadow: 0 0 0 3px rgba(161, 198, 61, 0.3);
+            }
+
+          }
+
+          /* position the currency, % or years label */
+          span {
+            position: absolute;
+            //top: 50%;
+            transform: translateY(-50%);
+            font-weight: $font-weight-bold;
+            font-size: 1rem;
+            color: $slate-700;
+            background-color: $slate-100;
+            padding: 8px 14px;
+            border-radius: 4px;
+          }
+
+          #pound {
+            left: 0.5px;
+            top: 50px;
+            height: 60%;
+          }
+
+          #period,
+          #rate {
+            right: 0.6px;
+            top: 49.5px;
+            height: 60%;
+          }
+
+          #loan-amount {
+              padding: 12px 14px 12px 55px !important; // space for icons/text
+            }
+        }
+
+        input::placeholder {
+          color: $slate-500;
+        }
+
+        input:disabled {
+          background-color: $slate-100;
+          color: $slate-500;
+        }
+
+        input[type='number']::-webkit-inner-spin-button,
+        input[type='number']::-webkit-outer-spin-button {
+          appearance: none;
+          margin: 0;
+        }
+
+        .mortgage-type {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 10px;
+          max-width: 350px;
+
+          .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: 1px solid $slate-300;
+            border-radius: 6px;
+            padding: 12px 16px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: $slate-900;
+            background-color: $white;
+            transition: all 0.3s ease;
+
+            input[type='radio'] {
+              appearance: none;
+              width: 18px;
+              height: 18px;
+              border: 2px solid $slate-300;
+              border-radius: 50%;
+              position: relative;
+              transition: border-color 0.3s, background-color 0.3s;
+
+              &:checked {
+                border-color: $lime;
+                background-color: $white;
+              }
+
+              &:checked::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 8px;
+                height: 8px;
+                background-color: $lime;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+
+            /* Highlight selected radio option */
+            input[type='radio']:checked + span {
+              color: $slate-900;
+            }
+
+            &:has(input[type='radio']:checked) {
+              border-color: $lime;
+              background-color: hsl(61, 70%, 92%); // soft lime tint background
+            }
+
+            &:hover {
+              border-color: $lime;
+            }
+          }
+        }
+
+
+      }
+
+    
+  }
 }
