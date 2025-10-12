@@ -23,16 +23,19 @@
         <div class="input-group">
           <label for="loan-amount">Mortgage Amount</label>
           <input type="number" id="loan-amount" required>
+          <span id="pound"><i class="fa-solid fa-sterling-sign"></i></span>
         </div>
 
         <div class="input-group">
           <label for="loan-term">Mortgage Term</label>
           <input type="number" id="loan-term" required>
+          <span id="period">years</span>
         </div>
 
         <div class="input-group">
           <label for="interest-rate">Interest Rate</label>
           <input type="number" step="0.01" id="interest-rate" required>
+          <span id="rate"><i class="fa-regular fa-percent"></i></span>
         </div>
 
         <div class="input-group">
@@ -49,7 +52,7 @@
           </div>
         </div>
 
-        <button type="submit">Calculate Repayments</button>
+        <button type="submit"><span id="calc"><i class="fa-solid fa-calculator"></i></span> Calculate Repayments</button>
       </form>
       <div class="result" id="result" style="display: none;">
         <h2>Monthly Repayment: $<span id="monthly-repayment">0.00</span></h2>
