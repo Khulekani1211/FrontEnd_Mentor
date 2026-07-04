@@ -62,16 +62,17 @@ body {
   justify-content: center;
   gap: 5px;
   position: relative;
-  /* wrapper for input + span */
-  /* position the currency, % or years label */
+  max-width: 350px;
 }
 .container .calculator form .input-group label {
   font-size: 0.95rem;
   color: hsl(202, 55%, 16%);
 }
+.container .calculator form .input-group {
+  /* wrapper for input + span */
+}
 .container .calculator form .input-group input {
   width: 100%;
-  max-width: 350px;
   padding: 12px 50px 12px 14px;
   border: 1px solid hsl(203, 41%, 72%);
   border-radius: 6px;
@@ -84,6 +85,9 @@ body {
   outline: none;
   border-color: hsl(61, 70%, 52%);
   box-shadow: 0 0 0 3px rgba(161, 198, 61, 0.3);
+}
+.container .calculator form .input-group {
+  /* position the currency, % or years label */
 }
 .container .calculator form .input-group span {
   position: absolute;
@@ -144,7 +148,6 @@ body {
   color: hsl(202, 55%, 16%);
   background-color: hsl(0, 0%, 100%);
   transition: all 0.3s ease;
-  /* Highlight selected radio option */
 }
 .container .calculator form .mortgage-type .radio-option input[type=radio] {
   -webkit-appearance: none;
@@ -172,6 +175,9 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+.container .calculator form .mortgage-type .radio-option {
+  /* Highlight selected radio option */
+}
 .container .calculator form .mortgage-type .radio-option input[type=radio]:checked + span {
   color: hsl(202, 55%, 16%);
 }
@@ -198,4 +204,25 @@ body {
 }
 .container .calculator form button:active {
   background-color: hsl(61, 70%, 32%);
+}
+.container .results {
+  background-color: hsl(202, 55%, 16%);
+  padding: 30px;
+  width: 100%;
+}
+.container .results .no-results {
+  font-size: 1rem;
+  color: hsl(202, 86%, 94%);
+  text-align: center;
+}
+.container .results .no-results h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(202, 86%, 94%);
+  margin-bottom: 20px;
+}
+.container .results .no-results p {
+  font-size: 1rem;
+  color: hsl(203, 41%, 72%);
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

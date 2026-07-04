@@ -122,6 +122,7 @@ body {
           justify-content: center;
           gap: 5px;
           position: relative;
+          max-width: 350px;
 
           label {
             font-size: 0.95rem;
@@ -131,7 +132,7 @@ body {
           /* wrapper for input + span */
           input {
             width: 100%;
-            max-width: 350px;
+            //max-width: 350px;
             padding: 12px 50px 12px 14px; // space for icons/text
             border: 1px solid $slate-300;
             border-radius: 6px;
@@ -280,5 +281,34 @@ body {
       }
 
     
+  }
+
+  // ==============================
+  // Result styles
+  // ==============================
+  .results {
+    background-color: $slate-900;
+    padding: 30px;
+    width: 100%;
+
+    .no-results {
+      font-size: 1rem;
+      color: $slate-100;
+      text-align: center;
+
+      h2 {
+      font-size: 1.5rem;
+      font-weight: $font-weight-bold;
+      color: $slate-100;
+      margin-bottom: 20px;
+      }
+
+      p{
+        font-size: 1rem;
+        color: $slate-300;
+        text-align: center;
+      }
+    }
+
   }
 }
