@@ -41,8 +41,11 @@ body {
   color: $slate-900;
   background-color: $slate-100;
   line-height: 1.5;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // ==============================
@@ -54,12 +57,28 @@ body {
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch;
+  }
 
   .calculator {
     background-color: $white;
     padding: 30px;
     width: 100%;
+    max-width: 420px;
+    margin: auto;
 
+    @media (min-width: 768px) {
+      flex: 1;
+      max-width: none;
+      margin: 0;
+    }
+    
     .cal-head {
       margin-bottom: 20px;
 
@@ -266,6 +285,7 @@ body {
           padding: 12px;
           font-size: 1.2rem;
           font-weight: $font-weight-bold;
+          max-width: 350px;
           cursor: pointer;
           transition: background-color 0.3s;
 
@@ -290,6 +310,14 @@ body {
     background-color: $slate-900;
     padding: 30px;
     width: 100%;
+    max-width: 420px;
+    margin: auto;
+
+    @media (min-width: 768px) {
+      flex: 1;
+      max-width: none;
+      margin: 0;
+    }
 
     .no-results {
       font-size: 1rem;

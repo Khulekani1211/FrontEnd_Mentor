@@ -13,8 +13,11 @@ body {
   color: hsl(202, 55%, 16%);
   background-color: hsl(202, 86%, 94%);
   line-height: 1.5;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -23,11 +26,29 @@ body {
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: stretch;
+  }
 }
 .container .calculator {
   background-color: hsl(0, 0%, 100%);
   padding: 30px;
   width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container .calculator {
+    flex: 1;
+    max-width: none;
+    margin: 0;
+  }
 }
 .container .calculator .cal-head {
   margin-bottom: 20px;
@@ -68,9 +89,7 @@ body {
   font-size: 0.95rem;
   color: hsl(202, 55%, 16%);
 }
-.container .calculator form .input-group {
-  /* wrapper for input + span */
-}
+
 .container .calculator form .input-group input {
   width: 100%;
   padding: 12px 50px 12px 14px;
@@ -86,9 +105,7 @@ body {
   border-color: hsl(61, 70%, 52%);
   box-shadow: 0 0 0 3px rgba(161, 198, 61, 0.3);
 }
-.container .calculator form .input-group {
-  /* position the currency, % or years label */
-}
+
 .container .calculator form .input-group span {
   position: absolute;
   transform: translateY(-50%);
@@ -175,9 +192,7 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-.container .calculator form .mortgage-type .radio-option {
-  /* Highlight selected radio option */
-}
+
 .container .calculator form .mortgage-type .radio-option input[type=radio]:checked + span {
   color: hsl(202, 55%, 16%);
 }
@@ -196,6 +211,7 @@ body {
   padding: 12px;
   font-size: 1.2rem;
   font-weight: 700;
+  max-width: 350px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -209,6 +225,15 @@ body {
   background-color: hsl(202, 55%, 16%);
   padding: 30px;
   width: 100%;
+  max-width: 420px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container .results {
+    flex: 1;
+    max-width: none;
+    margin: 0;
+  }
 }
 .container .results .no-results {
   font-size: 1rem;
