@@ -265,4 +265,50 @@ body {
   font-size: 1rem;
   color: hsl(203, 41%, 72%);
   text-align: center;
+}
+.container .results .with-results {
+  font-size: 1rem;
+  color: hsl(202, 86%, 94%);
+  min-height: 100%;
+}
+.container .results .with-results h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(202, 86%, 94%);
+  margin-bottom: 20px;
+}
+.container .results .with-results p {
+  font-size: 1rem;
+  color: hsl(203, 41%, 72%);
+}
+.container .results .with-results .result-details {
+  background-color: hsl(201, 55%, 10%);
+  margin-top: 20px;
+  padding: 20px 0 20px 10px;
+  border-radius: 10px;
+  border-top: 5px solid hsl(61, 70%, 52%);
+}
+.container .results .with-results .result-details h3 {
+  font-size: 1rem;
+  color: hsl(203, 41%, 72%);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.container .results .with-results .result-details .monthly-repayment {
+  margin-bottom: 20px;
+}
+.container .results .with-results .result-details .monthly-repayment p {
+  font-size: 2.4rem;
+  color: hsl(61, 70%, 52%);
+  font-weight: 600;
+}
+.container .results .with-results .result-details .detail {
+  border-top: 1px solid hsl(203, 41%, 72%);
+  padding-top: 20px;
+  width: 96%;
+}
+.container .results .with-results .result-details .detail p {
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

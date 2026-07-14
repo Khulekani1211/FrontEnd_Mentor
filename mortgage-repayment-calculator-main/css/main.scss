@@ -324,7 +324,7 @@ body {
       border-radius: 0 50px 0 80px;
     }
 
-    .no-results {
+    .no-results{
       font-size: 1rem;
       color: $slate-100;
       text-align: center;
@@ -345,6 +345,61 @@ body {
         font-size: 1rem;
         color: $slate-300;
         text-align: center;
+      }
+    }
+
+    .with-results {
+      font-size: 1rem;
+      color: $slate-100;
+      min-height: 100%;
+
+      h2 {
+      font-size: 1.5rem;
+      font-weight: $font-weight-bold;
+      color: $slate-100;
+      margin-bottom: 20px;
+      }
+
+      p{
+        font-size: 1rem;
+        color: $slate-300;
+      }
+
+      .result-details{
+        background-color: hsl(201, 55%, 10%);
+        margin-top: 20px;
+        padding: 20px 0 20px 10px;
+        border-radius: 10px;
+        border-top: 5px solid $lime;
+
+        h3{
+          font-size: 1rem;
+          color: $slate-300;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .monthly-repayment{
+          margin-bottom: 20px;
+
+          p{
+            font-size: 2.4rem;
+            color: $lime;
+            font-weight: 600;
+          }
+        }
+
+        .detail{
+          border-top: 1px solid $slate-300;
+          padding-top: 20px;
+          width: 96%;
+
+          p{
+            font-size: 1.6rem;
+            color: $white;
+            font-weight: 600;
+          }
+        }
       }
     }
 
