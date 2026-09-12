@@ -16,3 +16,23 @@ const totalPayment = document.getElementById('detail-total-payment');
 
 //The "Clear All" button
 const clearAll = document.querySelector('.cal-head a');
+
+//===============================
+// Mortgage Calculation
+//===============================
+function calculateRepayments(p, n, r, type){
+    //p = Principal Amount
+    //n = loan term in years
+    //r = annual rate
+    //type = Interest-Only or Full Repayment 
+    
+    const monthlyRate = r / 100 / 12;
+    const totalPaymentMonths = n * 12;
+
+    if(type === 'interest-only'){
+        const monthlyPayment = p * monthlyRate;
+        const totalPayment = monthlyPayment * totalPaymentMonths;
+        return {monthlyPayment, totalPayment}
+    }
+
+}
