@@ -87,6 +87,10 @@ body {
   position: relative;
   max-width: 350px;
 }
+.container .calculator form .input-group:has(input:focus) span {
+  background-color: hsl(61, 70%, 52%);
+  color: hsl(202, 55%, 16%);
+}
 .container .calculator form .input-group label {
   font-size: 0.95rem;
   color: hsl(202, 55%, 16%);

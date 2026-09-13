@@ -146,6 +146,12 @@ body {
           position: relative;
           max-width: 350px;
 
+          
+        &:has(input:focus) span {
+          background-color: $lime;
+          color: $slate-900; // darker text for contrast against lime
+        }
+
           label {
             font-size: 0.95rem;
             color: $slate-900;
