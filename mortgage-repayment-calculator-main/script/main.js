@@ -73,3 +73,13 @@ clearAll.addEventListener('click', (e) => {
 // Initializing state on page reload
 //=====================================
 showNoResults();
+
+//=================================
+// Formatting the Amount display
+//=================================
+function formatAmount(value){
+    return value.toLocaleString('en-GB', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    })
+}
