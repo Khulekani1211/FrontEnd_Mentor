@@ -35,4 +35,11 @@ function calculateRepayments(p, n, r, type){
         return {monthlyPayment, totalPayment}
     }
 
+    //Calculating Total Monthly Repayments
+    const rateFactor = Math.pow(1 + monthlyRate, totalPaymentMonths);
+    const monthlyPayment = (p * monthlyRate * rateFactor) / (rateFactor -1);
+    const totalPayment = monthlyPayment * totalPaymentMonths;
+
+    return {monthlyPayment, totalPayment}
+
 }
