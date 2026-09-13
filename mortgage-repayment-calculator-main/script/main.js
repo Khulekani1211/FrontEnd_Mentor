@@ -33,14 +33,16 @@ function calculateRepayments(p, n, r, type){
         const monthlyPayment = p * monthlyRate;
         const totalPayment = monthlyPayment * totalPaymentMonths;
         return {monthlyPayment, totalPayment}
+    }else{
+        //Calculating Total Monthly Repayments
+        const rateFactor = Math.pow(1 + monthlyRate, totalPaymentMonths);
+        const monthlyPayment = (p * monthlyRate * rateFactor) / (rateFactor -1);
+        const totalPayment = monthlyPayment * totalPaymentMonths;
+
+        return {monthlyPayment, totalPayment}
     }
 
-    //Calculating Total Monthly Repayments
-    const rateFactor = Math.pow(1 + monthlyRate, totalPaymentMonths);
-    const monthlyPayment = (p * monthlyRate * rateFactor) / (rateFactor -1);
-    const totalPayment = monthlyPayment * totalPaymentMonths;
-
-    return {monthlyPayment, totalPayment}
+    
 
 }
 
@@ -95,7 +97,8 @@ form.addEventListener('submit', (e) => {
     const principal = parseFloat(purchasePrice.value);
     const loanTerm = parseFloat(paymentTerm.value);
     const rate = parseFloat(interestRate.value);
-    const mortgageType = document.querySelector('input[name="mortgage-type"]').value;
+    const mortgageType = document.querySelector('input[name="mortgage-type"]:checked').value;
+
 
     if(!principal || !loanTerm || !rate || principal <= 0 || loanTerm <= 0 || rate <= 0){
         return;
