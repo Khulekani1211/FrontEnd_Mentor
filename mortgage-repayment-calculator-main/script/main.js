@@ -68,3 +68,8 @@ clearAll.addEventListener('click', (e) => {
     form.reset();
     showNoResults();
 })
+
+//=====================================
+// Initializing state on page reload
+//=====================================
+showNoResults();
