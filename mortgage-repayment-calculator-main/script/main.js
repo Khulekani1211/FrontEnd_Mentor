@@ -8,8 +8,8 @@ const purchasePrice = document.getElementById('loan-amount');
 const paymentTerm = document.getElementById('loan-term');
 const interestRate = document.getElementById('interest-rate');
 
-const withResults = document.getElementById('result');
-const noResults = document.querySelector('.no-result');
+const withResults = document.querySelector('.with-results')
+const noResults = document.querySelector('.no-results');
 
 const monthlyRepayment = document.getElementById('detail-monthly-amount');
 const totalPayment = document.getElementById('detail-total-payment');
@@ -55,9 +55,16 @@ function showResults(){
 
 function showNoResults(){
     withResults.style.display = 'none';
-    noResults.style.display = 'none';
+    noResults.style.display = 'block';
 }
 
 //===========================
 // Clear All Functionality
 //===========================
+
+clearAll.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    form.reset();
+    showNoResults();
+})
