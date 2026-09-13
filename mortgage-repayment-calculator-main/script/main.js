@@ -43,3 +43,21 @@ function calculateRepayments(p, n, r, type){
     return {monthlyPayment, totalPayment}
 
 }
+
+//==========================
+// Toggle Results Screen
+//==========================
+
+function showResults(){
+    withResults.style.display = 'block';
+    noResults.style.display = 'none';
+}
+
+function showNoResults(){
+    withResults.style.display = 'none';
+    noResults.style.display = 'none';
+}
+
+//===========================
+// Clear All Functionality
+//===========================
