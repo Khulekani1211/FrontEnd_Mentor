@@ -91,6 +91,30 @@ body {
   background-color: hsl(61, 70%, 52%);
   color: hsl(202, 55%, 16%);
 }
+.container .calculator form .input-group.error input {
+  border-color: hsl(4, 69%, 50%);
+  background-color: hsl(4, 69%, 96%);
+}
+.container .calculator form .input-group.error input:focus {
+  border-color: hsl(4, 69%, 50%);
+  box-shadow: 0 0 0 3px rgba(213, 55, 41, 0.3);
+}
+.container .calculator form .input-group.error span {
+  background-color: hsl(4, 69%, 50%);
+  color: hsl(0, 0%, 100%);
+}
+.container .calculator form .input-group.error label {
+  color: hsl(4, 69%, 50%);
+}
+.container .calculator form .input-group .error-message {
+  display: none;
+  font-size: 0.85rem;
+  color: hsl(4, 69%, 50%);
+  margin-top: 2px;
+}
+.container .calculator form .input-group.error .error-message {
+  display: block;
+}
 .container .calculator form .input-group label {
   font-size: 0.95rem;
   color: hsl(202, 55%, 16%);

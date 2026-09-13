@@ -147,10 +147,44 @@ body {
           max-width: 350px;
 
           
-        &:has(input:focus) span {
-          background-color: $lime;
-          color: $slate-900; // darker text for contrast against lime
-        }
+          &:has(input:focus) span {
+            background-color: $lime;
+            color: $slate-900; // darker text for contrast against lime
+          }
+
+          //Error state styles
+          &.error{
+            input{
+              border-color: $red;
+              background-color: hsl(4, 69%, 96%);
+
+              &:focus{
+                border-color: $red;
+                box-shadow: 0 0 0 3px rgba(213, 55, 41, 0.3);
+              }
+            }
+
+            span{
+              background-color: $red;
+              color: $white;
+            }
+
+            label {
+              color: $red;
+            }
+          }
+
+          //Error message text styling
+          .error-message{
+            display: none;
+            font-size: 0.85rem;
+            color: $red;
+            margin-top: 2px;
+          }
+
+          &.error .error-message{
+            display: block;
+          }
 
           label {
             font-size: 0.95rem;
