@@ -12,7 +12,7 @@ const withResults = document.querySelector('.with-results')
 const noResults = document.querySelector('.no-results');
 
 const monthlyRepayment = document.getElementById('detail-monthly-amount');
-const totalPayment = document.getElementById('detail-total-payment');
+const totalToPay = document.getElementById('detail-total-payment');
 
 //The "Clear All" button
 const clearAll = document.querySelector('.cal-head a');
@@ -83,3 +83,33 @@ function formatAmount(value){
         maximumFractionDigits: 2
     })
 }
+
+//================================
+// Handling Form Submit
+//================================
+
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    const principal = parseFloat(purchasePrice.value);
+    const loanTerm = parseFloat(paymentTerm.value);
+    const rate = parseFloat(interestRate.value);
+    const mortgageType = document.querySelector('input[name="mortgage-type"]').value;
+
+    if(!principal || !loanTerm || !rate || principal <= 0 || loanTerm <= 0 || rate <= 0){
+        return;
+    }
+
+    const {monthlyPayment, totalPayment} = calculateRepayments(
+        principal,
+        loanTerm,
+        rate,
+        mortgageType
+    )
+
+    monthlyRepayment.textContent = formatAmount(monthlyPayment);
+    totalToPay.textContent = formatAmount(totalPayment);
+
+    showResults();
+});
