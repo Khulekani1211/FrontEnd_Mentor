@@ -17,6 +17,10 @@ const totalToPay = document.getElementById('detail-total-payment');
 //The "Clear All" button
 const clearAll = document.querySelector('.cal-head a');
 
+//Error State DOM Listeners
+const errorMsg = document.querySelectorAll('.error-message');
+console.log(errorMsg)
+
 //===============================
 // Mortgage Calculation
 //===============================
@@ -86,6 +90,25 @@ function formatAmount(value){
     })
 }
 
+//=================================
+// Input Validation
+//=================================
+function validateInput(p, n, r){
+    //p = Principal Amount
+    //n = loan term in years
+    //r = annual rate
+    //type = Interest-Only or Full Repayment 
+
+    if(!p || !n || !r || p <= 0 || n <= 0 || r <= 0){
+        errorMsg.every((item) => {
+            item.style.display = 'block';
+        })
+    }
+
+
+
+}
+
 //================================
 // Handling Form Submit
 //================================
@@ -100,9 +123,11 @@ form.addEventListener('submit', (e) => {
     const mortgageType = document.querySelector('input[name="mortgage-type"]:checked').value;
 
 
-    if(!principal || !loanTerm || !rate || principal <= 0 || loanTerm <= 0 || rate <= 0){
-        return;
-    }
+    validateInput(
+        principal,
+        loanTerm,
+        rate
+    )
 
     const {monthlyPayment, totalPayment} = calculateRepayments(
         principal,
@@ -116,3 +141,4 @@ form.addEventListener('submit', (e) => {
 
     showResults();
 });
+
