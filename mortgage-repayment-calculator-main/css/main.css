@@ -82,14 +82,38 @@ body {
 .container .calculator form .input-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 5px;
-  position: relative;
   max-width: 350px;
+}
+.container .calculator form .input-group .field-wrapper {
+  position: relative;
 }
 .container .calculator form .input-group:has(input:focus) span {
   background-color: hsl(61, 70%, 52%);
   color: hsl(202, 55%, 16%);
+}
+.container .calculator form .input-group {
+  /* position the currency, % or years label */
+}
+.container .calculator form .input-group span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(200, 24%, 40%);
+  background-color: hsl(202, 86%, 94%);
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+.container .calculator form .input-group #pound {
+  left: 0.5px;
+  height: 100%;
+}
+.container .calculator form .input-group #period,
+.container .calculator form .input-group #rate {
+  right: 0.6px;
 }
 .container .calculator form .input-group.error input {
   border-color: hsl(4, 69%, 50%);
@@ -137,30 +161,6 @@ body {
   outline: none;
   border-color: hsl(61, 70%, 52%);
   box-shadow: 0 0 0 3px rgba(161, 198, 61, 0.3);
-}
-.container .calculator form .input-group {
-  /* position the currency, % or years label */
-}
-.container .calculator form .input-group span {
-  position: absolute;
-  transform: translateY(-50%);
-  font-weight: 700;
-  font-size: 1rem;
-  color: hsl(200, 24%, 40%);
-  background-color: hsl(202, 86%, 94%);
-  padding: 8px 14px;
-  border-radius: 4px;
-}
-.container .calculator form .input-group #pound {
-  left: 0.5px;
-  top: 50px;
-  height: 60%;
-}
-.container .calculator form .input-group #period,
-.container .calculator form .input-group #rate {
-  right: 0.6px;
-  top: 49.5px;
-  height: 60%;
 }
 .container .calculator form .input-group #loan-amount {
   padding: 12px 14px 12px 55px !important;

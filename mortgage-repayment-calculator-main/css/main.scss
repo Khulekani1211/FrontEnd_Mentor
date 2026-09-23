@@ -114,16 +114,43 @@ body {
         .input-group {
           display: flex;
           flex-direction: column;
-          justify-content: center;
           gap: 5px;
-          position: relative;
+          //position: relative;
           max-width: 350px;
 
-          
+          .field-wrapper {
+            position: relative;   // moved here — icon is now positioned relative to JUST the input
+          }
+
           &:has(input:focus) span {
             background-color: $lime;
             color: $slate-900; // darker text for contrast against lime
           }
+
+          /* position the currency, % or years label */
+          span {
+            position: absolute;
+            top: 50%;              // now safe to use 50% — parent is just the input's own box
+            transform: translateY(-50%);
+            height: auto;           // no longer needs an arbitrary %
+            font-weight: $font-weight-bold;
+            font-size: 1rem;
+            color: $slate-700;
+            background-color: $slate-100;
+            padding: 8px 14px;
+            border-radius: 4px;
+          }
+
+          #pound {
+            left: 0.5px;
+            height: 100%;
+          }
+
+          #period,
+          #rate {
+            right: 0.6px;
+          }
+
 
           //Error state styles
           &.error{
@@ -185,31 +212,6 @@ body {
 
           }
 
-          /* position the currency, % or years label */
-          span {
-            position: absolute;
-            //top: 50%;
-            transform: translateY(-50%);
-            font-weight: $font-weight-bold;
-            font-size: 1rem;
-            color: $slate-700;
-            background-color: $slate-100;
-            padding: 8px 14px;
-            border-radius: 4px;
-          }
-
-          #pound {
-            left: 0.5px;
-            top: 50px;
-            height: 60%;
-          }
-
-          #period,
-          #rate {
-            right: 0.6px;
-            top: 49.5px;
-            height: 60%;
-          }
 
           #loan-amount {
               padding: 12px 14px 12px 55px !important; // space for icons/text
